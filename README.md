@@ -1,6 +1,6 @@
 # leaky_hardtanh
 
-Pytorch implemenation of the leaky version of the hard hyperbolic tangent (`hardtan`h) function. For the non-leaky `hardtanh` defnition, see the PyTorch documentation [here](https://pytorch.org/docs/stable/generated/torch.nn.Hardtanh.html).
+Pytorch implemenation of the leaky version of the hard hyperbolic tangent (`hardtanh`) function. For the non-leaky `hardtanh` defnition, see the PyTorch documentation [here](https://pytorch.org/docs/stable/generated/torch.nn.Hardtanh.html).
 
 In comparison to `hardtanh` the `leaky_hardtanh` has a defined (non-zero) gradient outside the linear region. This is an equivalent change as moving from the `ReLU` activation function to the `LeakyReLU` activation. 
 
