@@ -3,13 +3,13 @@
 Pytorch implemenation of the leaky version of the hard hyperbolic tangent (`hardtanh`) function. For the non-leaky `hardtanh` defnition, see the PyTorch documentation [here](https://pytorch.org/docs/stable/generated/torch.nn.Hardtanh.html).
 
 LeakyHardTanh definition: 
-$$
+```math
 \text{LeakyHardTanh}(x) = \begin{cases}
     (x - \text{max\_val}) \times \text{min\_slope} +  \text{max\_val} & \text{ if } x > \text{ max\_val } \\
     (x - \text{min\_val}) \times \text{max\_slope} +  \text{min\_val} & \text{ if } x < \text{ min\_val } \\
     x & \text{ otherwise } \\
         \end{cases}
-$$
+```
 
 In comparison to `hardtanh` the `leaky_hardtanh` has a defined (non-zero) gradient outside the linear region. This is an equivalent change as moving from the `ReLU` activation function to the `LeakyReLU` activation. 
 
