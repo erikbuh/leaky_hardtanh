@@ -20,8 +20,8 @@ class LeakyHardtanh(nn.Module):
 
     .. math::
         \text{LeakyHardTanh}(x) = \begin{cases}
-            (x - \text{max\_val}) \ times x +  \text{max\_val} & \text{ if } x > \text{ max\_val } \\
-            (x - \text{min\_val}) \ times x +  \text{min\_val} & \text{ if } x < \text{ min\_val } \\
+            (x - \text{max\_val}) \times \text{min\_slope} +  \text{max\_val} & \text{ if } x > \text{ max\_val } \\
+            (x - \text{min\_val}) \times \text{max\_slope} +  \text{min\_val} & \text{ if } x < \text{ min\_val } \\
             x & \text{ otherwise } \\
         \end{cases}
 
