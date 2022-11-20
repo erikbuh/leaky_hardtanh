@@ -1,4 +1,4 @@
-# leaky_hardtanh
+# Leaky HardTanh Activation Function
 
 Pytorch implemenation of the leaky version of the hard hyperbolic tangent (`hardtanh`) function. For the non-leaky `hardtanh` defnition, see the PyTorch documentation [here](https://pytorch.org/docs/stable/generated/torch.nn.Hardtanh.html).
 
